@@ -1,0 +1,77 @@
+// Links
+a {
+    color: $text-black;
+    transition: color .2s ease;
+}
+
+a:hover {
+    color: $green;
+}
+
+a:active {
+    color: $dark-gray;
+}
+
+a:visited {
+    color: $green;
+}
+
+// Buttons
+button {
+    font-family: $font-primary;
+    outline: none;
+    border: none;
+    background-color: $dark;
+    color: $light;
+    margin: .5rem 0;    
+    border-radius: .3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+button:hover {
+    background-color: $dark-secondary;
+}
+
+button:active {
+    background-color: $dark;
+}
+
+// Line Break
+hr {
+    border: 1px solid $light;
+    margin: 1rem 0;
+}
+
+// Padding
+
+.pd-1rem {
+    padding: 1rem;
+}
+
+// Border-radius
+
+.round-tiny {
+    border-radius: .3rem;
+}
+
+// Cursor
+
+.cursor_drag, .draggable {
+    cursor: move;
+}
+
+// Dragable Tools
+
+.dragging {
+    opacity: .5;
+}
+
+.dragging_over {
+    border: 3px dotted #666;
+}
+
+.drag_box {
+    opacity: 1;
+    background-color: red;
+}

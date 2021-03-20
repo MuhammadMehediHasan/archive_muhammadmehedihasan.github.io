@@ -1,0 +1,57 @@
+// Header
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $dark-gray;
+    display: block;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h1::before {
+    content: '';
+    border: 1px solid $light;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+
+// Paragraphs, links, Buttons
+a, p, button {
+    letter-spacing: .5px;
+    word-spacing: 2px;
+    font-size: 18px;
+}
+

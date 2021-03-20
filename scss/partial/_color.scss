@@ -1,0 +1,69 @@
+$dark: #222831;
+$dark-secondary: #333333;
+$dark-gray: #30475e;
+
+
+$green: #008891;
+
+$red: #f05454;
+$light: #dddddd;
+
+$text-black: #33475b;
+
+
+.dark {
+    color: $dark;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.dark-secondary {
+    background-color: $dark-secondary;
+}
+
+.bg-dark-secondary {
+    background-color: $dark-secondary;
+}
+
+.dark-gray {
+    color: $dark-gray;
+}
+
+.bg-dark-gray {
+    background-color: $dark-gray;
+}
+
+.green {
+    color: $green;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.red {
+    color: $red;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.light {
+    color: $light;
+}
+
+.bg-light {
+    background-color: $light;
+}
+
+.black {
+    color: $text-black;
+}
+
+.bg-black {
+    background-color: $text-black;
+}
+

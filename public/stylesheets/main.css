@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  src: url(../../fonts/Exo/Exo-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Exo";
+  font-style: italic;
+  src: url(../../fonts/Exo/Exo-Italic-VariableFont_wght.ttf);
+}
+
+.dark {
+  color: #222831;
+}
+
+.bg-dark {
+  background-color: #222831;
+}
+
+.dark-secondary {
+  background-color: #333333;
+}
+
+.bg-dark-secondary {
+  background-color: #333333;
+}
+
+.dark-gray {
+  color: #30475e;
+}
+
+.bg-dark-gray {
+  background-color: #30475e;
+}
+
+.green {
+  color: #008891;
+}
+
+.bg-green {
+  background-color: #008891;
+}
+
+.red {
+  color: #f05454;
+}
+
+.bg-red {
+  background-color: #f05454;
+}
+
+.light {
+  color: #dddddd;
+}
+
+.bg-light {
+  background-color: #dddddd;
+}
+
+.black {
+  color: #33475b;
+}
+
+.bg-black {
+  background-color: #33475b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #30475e;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+h1::before {
+  content: '';
+  border: 1px solid #dddddd;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a, p, button {
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  font-size: 18px;
+}
+
+a {
+  color: #33475b;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #008891;
+}
+
+a:active {
+  color: #30475e;
+}
+
+a:visited {
+  color: #008891;
+}
+
+button {
+  font-family: "Exo", sans-serif;
+  outline: none;
+  border: none;
+  background-color: #222831;
+  color: #dddddd;
+  margin: .5rem 0;
+  border-radius: .3rem;
+  padding: .5rem 1.2rem;
+  cursor: pointer;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+button:active {
+  background-color: #222831;
+}
+
+hr {
+  border: 1px solid #dddddd;
+  margin: 1rem 0;
+}
+
+.pd-1rem {
+  padding: 1rem;
+}
+
+.round-tiny {
+  border-radius: .3rem;
+}
+
+.cursor_drag, .draggable {
+  cursor: move;
+}
+
+.dragging {
+  opacity: .5;
+}
+
+.dragging_over {
+  border: 3px dotted #666;
+}
+
+.drag_box {
+  opacity: 1;
+  background-color: red;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  color: #33475b;
+  margin: 0;
+}
+
+.container {
+  padding: .3rem;
+  margin: .4rem;
+}
+
+.fluid {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

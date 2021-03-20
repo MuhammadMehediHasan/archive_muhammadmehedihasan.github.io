@@ -1,0 +1,20 @@
+@import './partial/fonts';
+@import './partial/color';
+@import './partial/typography';
+@import './partial/tools';
+// Default
+
+body {
+    font-family: $font-primary;
+    color: $text-black;
+    margin: 0;
+}
+
+.container {
+    padding: .3rem;
+    margin: .4rem;
+}
+
+.fluid {
+    padding: 1rem;
+}

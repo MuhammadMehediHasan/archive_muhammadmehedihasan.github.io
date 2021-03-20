@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Exo";
+    font-style: normal;
+    src: url(../../fonts/Exo/Exo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Exo";
+    font-style: italic;
+    src: url(../../fonts/Exo/Exo-Italic-VariableFont_wght.ttf);
+}
+
+$font-primary: 'Exo', sans-serif;
