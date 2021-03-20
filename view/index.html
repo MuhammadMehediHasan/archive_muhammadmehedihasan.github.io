@@ -7,11 +7,11 @@
     <title>DeveloperText</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../public/stylesheets/main.min.css">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
   </head>
   <body>
-    <div class="container">
-
-    
+    <div class="container">   
 
     <!-- Typography -->
 
@@ -39,6 +39,23 @@
     <button>Click Me</button>
     <button>Click Me</button>
     <button>Click Me</button>
+
+
+    <!-- Code -->
+    <pre>
+
+    <code class="language-js">function sayHi() {
+  console.log("Hi");
+  return false;
+}</code>
+
+    </pre>
+
   </div>
+<!-- Scripts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
   </body>
 </html>
