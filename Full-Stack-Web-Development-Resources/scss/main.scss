@@ -1,0 +1,218 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap');
+// color
+@import './partial/color';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $primary-color;
+}
+
+html,
+body {
+    background: $primary-background;
+    font-family: 'Poppins', sans-serif;
+    padding: .4rem;
+
+    .container {
+        padding: 1rem;
+        background-color: $secondary-background;
+        border-radius: .5rem;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+
+        &:not(&:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: 1rem .5rem;
+            margin-bottom: 2em;
+            position: relative;
+            // border: 1px solid red;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 10%;
+                background-color: $light-gray;
+                bottom: .1em;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: .5rem;
+            }
+        }
+
+
+
+    }
+
+    h1 {
+
+        &.title {
+            text-align: center;
+            padding: 2rem;
+            font-size: 40px;
+            font-weight: bold;
+            color: $secondary-color;
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 50px;
+            transform: translate(-20%, -30%);
+            background-color: $primary-color;
+            border-radius: .5rem;
+        }
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     height: 10px;
+        //     width: 50px;
+        //     bottom: 1em;
+        //     transform: translate(10%, 50%);
+        //     background-color: $primary-color;
+        // }
+
+    }
+
+
+
+
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+    // border: 1px solid red;
+
+    div {
+        margin: 0 auto;
+    }
+
+    .topics {
+        text-align: center;
+        padding: 5px 10px;
+        background: $primary-background;
+        color: $primary-color;
+        margin: 0 auto;
+        width: 350px;
+        border-radius: .5rem;
+    }
+
+    .books,
+    .youtube,
+    .websites,
+    .others {
+        width: 350px;
+    }
+
+    ol {
+        width: 350px;
+        margin: 0 auto;
+
+        li {
+            line-height: 1.5;
+            margin: 1rem 2rem;
+            text-align: left;
+            padding-left: 1rem;
+            cursor: pointer;
+
+
+            &:hover , &:hover a{
+                color: tomat$secondary-color;
+                transform: translateY(-15%) scale(1.1);
+                transition: .4s;
+            }
+
+            &:hover {
+                cursor: crosshair;
+                user-select: all;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+footer h2 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.copyright {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+        transition: .5s;
+        color: $primary-color;
+    }
+}
+
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 1200px) {
+    .content .others {
+        display: none;
+        visibility: hidden;
+        // background: red;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content .others {
+        display: none;
+        visibility: hidden;
+        // background: red;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    h1.title {
+        text-align: center;
+        padding: 2rem;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
